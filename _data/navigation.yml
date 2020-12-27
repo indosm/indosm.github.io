@@ -1,7 +1,12 @@
+# main links
 main:
-  - title: "Programming"
+  - title: "프로그래밍"
     url: /programming/
-  - title: "Security"
+  - title: "보안"
     url: /security/
-  -title: "Posts"
+  - title: "Posts"
     url: /posts/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
