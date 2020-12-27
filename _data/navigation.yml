@@ -1,0 +1,7 @@
+main:
+  - title: "Programming"
+    url: /programming/
+  - title: "Security"
+    url: /security/
+  -title: "Posts"
+    url: /posts/
