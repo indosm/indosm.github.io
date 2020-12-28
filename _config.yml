@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "Jihun Kim"
-  avatar           : "icon.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/icon.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "부족한 개발자입니다."
   location         : "Seoul, Korea"
   email            :
@@ -279,7 +279,7 @@ defaults:
       comments: # true
       share: true
       related: true
-  #_pages part
+  #_pages
   - scope:
       path: "_pages"
       type: pages
