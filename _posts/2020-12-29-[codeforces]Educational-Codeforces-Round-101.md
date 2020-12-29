@@ -8,7 +8,7 @@ tags:
   - Programming
 ---
 
-## A. Regular Bracket Sequence
+##A. Regular Bracket Sequence
 
 '(', ')', '?' 세개의 문자로 구성된 문장이 올바른 괄호짝으로 구성된 문장인지 여부를 판단하는 문제.
 <!--more-->
@@ -16,7 +16,7 @@ tags:
 문제 조건상 '(', ')'는 각각 한단어만 나오고, 나머지 모든 단어는 '?'로만 구성되어있어 TLE가 떴다.
 <!--more-->
 그래서 그냥 단순하게 절대로 괄호짝이 나올수 없는 경우를 제외하고 나머지를 가능한 경우로 판단하는 방법으로 solve.
-```yaml
+```c_cpp
 string s;
 scanf("%s",&s);
 if(strlen(s)%2==1){
