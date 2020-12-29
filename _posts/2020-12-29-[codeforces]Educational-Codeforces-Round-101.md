@@ -16,7 +16,7 @@ tags:
 문제 조건상 '(', ')'는 각각 한단어만 나오고, 나머지 모든 단어는 '?'로만 구성되어있어 TLE가 떴다.
 <!--more-->
 그래서 그냥 단순하게 절대로 괄호짝이 나올수 없는 경우를 제외하고 나머지를 가능한 경우로 판단하는 방법으로 solve.
-```cpp
+```c_cpp
 string s;
 scanf("%s",&s);
 if(strlen(s)%2==1){
@@ -36,7 +36,7 @@ else {
 ##B. Red and Blue
 
 입력을 Red와 Blue를 나누어서 각각 list를 구성하고, 최대부분합을 구하는데, 이때 부분합의 조건이 앞에서부터 순차적으로 원소를 포함해야되는 문제.
-```cpp
+```c_cpp
 int n,m;
 int r[110], b[110];
 int max_red=0, max_blue=0;
@@ -62,7 +62,7 @@ printf("%d\n",max_red+max_blue);
 <!--more-->
 A에서와 마찬가지로, 놓을 수 있는 모든 경우를 DFS하게 되면 TLE가 뜨게 되므로, 수학적으로 놓을수 있는 최소높이와 최대높이를 저장해서,
 울타리 길이인 n번만큼 DP로 탐색해가는 문제.
-```cpp
+```c_cpp
 int solve(int now, int end, int k, int height[200020], int minheight, int maxheight){
 	if(now==end){
 		if(minheight==height[now])
@@ -91,7 +91,7 @@ int solve(int now, int end, int k, int height[200020], int minheight, int maxhei
 주어진 n의 범위인 2*10^5의 경우 2로 나눠서 1이 될려면 문제 조건인 n+5번을 넘어버리게 된다.
 <!--more-->
 그래서 n을 최대한 빠르게 1까지 나눠지게끔 하는 수를 고르기 위해서, sqrt(n)을 이용하면 n/sqrt(n)은 sqrt(n)이 되고, 다시 그 sqrt(n)을 sqrt(n)으로 나누면 1이 되게끔, 즉 2번의 operation만으로 1이 되므로, 이러한 root값을 중심으로 반복횟수를 줄이게 되었다.
-```cpp
+```c_cpp
 int n;
 scanf("%d",&n);
 int root[10];
